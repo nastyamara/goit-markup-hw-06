@@ -472,6 +472,7 @@ border: 1px solid var(--main-acent-color);
 .footer-container {
 display: flex;
 align-items: baseline;
+justify-content: space-between;
 
 
 }
@@ -529,8 +530,8 @@ margin-bottom: 20px;
 }
 .footer-contacts-container{
     display: flex;
-gap: 70px;
-align-items: baseline;
+    gap: 70px;
+    align-items: baseline;
 }
 .subscribe-form {
     display: flex;
@@ -553,6 +554,10 @@ margin-right: 12px;
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
+transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-field:focus{
+    border: 1px solid var(--main-acent-color);
 }
 .subscribe-btn{
     width: 200px;
@@ -561,10 +566,11 @@ border-radius: 4px;
     justify-content: center;
     align-items: center;
     background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     gap: 10px;
     cursor: pointer;
+    border: none;
+    
 }
 .subscribe-btn-text {
 
@@ -591,8 +597,8 @@ border-radius: 4px;
         padding: 6px 22px;
         border-radius: 4px;
         transition-property: background-color, color, box-shadow;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
 }
 
@@ -723,6 +729,7 @@ margin-right: 8px;
     min-height: 581px;
     background-color: #fff;
     border-radius: 4px;
+    padding: 40px;
     transition: transform 200ms ease ;
   
   }
@@ -756,12 +763,11 @@ margin-right: 8px;
 
   .modal-title{
     font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
-        color: var(--main-h-color);
-       text-align: center;
-       margin-top: 40px;
-       margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--main-h-color);
+    text-align: center;
+    margin-bottom: 12px;
   }
  .submit-btn {
     display: flex;
@@ -777,9 +783,8 @@ margin-right: 8px;
     letter-spacing: 0.06em;
     color: var(--contrast-text-h-color);
     background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
     border-radius: 4px;
-
  }
 .label-text {
     font-weight: 400;
@@ -792,23 +797,15 @@ margin-right: 8px;
  .form-icon {
    position: absolute;
    left: 12px;
-   top: 11px;
+   top: 30px;
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
- .input-form {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-top: 4px;
-    
- }
- .form-group {
- margin-left: 40px;
- margin-right: 40px;
-
- }
+ 
  .form-field {
-    width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 4px;
+        width: 100%;
         padding-left: 42px;
         height: 40px;
         font-size: 16px;
@@ -819,12 +816,12 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
  }
  .form-label {
+    position: relative;
     display: block;
-margin-bottom: 10px;
+    margin-bottom: 10px;
  }
  .comment-label{
-    margin-bottom: 20px; 
-      
+    margin-bottom: 20px;  
  }
 
  .form-field:focus {
@@ -897,6 +894,7 @@ background-size: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
 
